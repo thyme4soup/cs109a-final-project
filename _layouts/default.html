@@ -8,6 +8,7 @@
     {%- include header.html -%}
     
     <nav class="group">
+      <div class="wrapper>
         {% if site.title and site.title != page.title %}
            <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
         {% endif %}
@@ -21,6 +22,7 @@
                     {% endif %}
                 {% endif %}
         {% endfor %}
+      </div>
     </nav>
 
     <main class="page-content" aria-label="Content">
