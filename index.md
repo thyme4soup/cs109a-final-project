@@ -1,7 +1,6 @@
 ---
 title: Project Overview
 ---
-# Project Overview
 Authors: Michael Chen, Michael Chenevey, Leopold Bottinger
 
 ## Problem Statement
