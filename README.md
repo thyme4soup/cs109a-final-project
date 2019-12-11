@@ -8,7 +8,7 @@ This is the full repository for our cs109a final project -- predicting the 2018 
  
 ## Website
 
-The live website can be found (here)[https://thyme4soup.github.io/cs109a-final-project/]. This is spread over multiple pages, to edit the pages you can edit one of the multiple markdown files in the root of this repository.
+The live website can be found [here](https://thyme4soup.github.io/cs109a-final-project/). This is spread over multiple pages, to edit the pages you can edit one of the multiple markdown files in the root of this repository.
 
 ## Code
 
