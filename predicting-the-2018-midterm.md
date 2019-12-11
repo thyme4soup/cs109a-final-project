@@ -15,7 +15,7 @@ We selected the top-performing models found during testing and applied them to t
 
 ### Results
 
-| Model          | Accuracy on Full Test Data | Accuracy on Only Demographic Data |
+| Model          | Accuracy on Full Test Data | Accuracy on Demographic Only Data |
 |----------------|---------------------------:|----------------------------------:|
 | LASSO          |                            |                                   |
 | Ridge          |                            |                                   |
