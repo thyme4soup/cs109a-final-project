@@ -1,19 +1,13 @@
----
-layout: default
----
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <title>{{page.title}}</title>
-  </head>
-  <body style="margin:100;padding:100">
-    <div class="container-lg px-3 my-5 markdown-body">
-      <nav class="group">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+    
+    <nav class="group">
         {% if site.title and site.title != page.title %}
            <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
         {% endif %}
@@ -27,12 +21,16 @@ layout: default
                     {% endif %}
                 {% endif %}
         {% endfor %}
-        </nav>
+    </nav>
 
-      <h1>{{page.title}}</h1>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
 
-      {{ content }}
+    {%- include footer.html -%}
 
-    </div>
   </body>
+
 </html>
