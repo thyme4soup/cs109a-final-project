@@ -1,4 +1,5 @@
 ---
+theme: jekyll-theme-cayman
 title: Project Overview
 ---
 Authors: Michael Chen, Michael Chenevey, Leopold Bottinger
