@@ -21,25 +21,39 @@ For LASSO and Ridge Regression, the penalty parameter is fit by testing penalty 
  
 The results for LASSO are shown in Figure 4, and the results for Ridge Regression are shown in Figure 5. We see that the optimal regularization parameter for LASSO is 10, and for Ridge Regression it is 10. For LASSO, the performance of the model drops off significantly as the penalty term is decreased from 1, and the performance decreases slightly as the penalty term is increased from 1. For Ridge Regression, the performance across the regularization terms above 0.001 are relatively similar, but we choose a penalty term of 10 since it has the highest performance.
  
+  ![Figure 4](figures/4.png)
+  
+   ![Figure 5](figures/5.png)
+ 
 ### Multilayer Perceptron
  
 For fitting the multilayer perceptron, we tune two different hyperparameters: the number of nodes in each hidden layer and the number of hidden layers. The number of nodes that were tested were 64 and 128, whereas the number of hidden layers tested was 2 or 3. We show the performance of all four possible combinations of nodes and hidden layers in Figure 6. We see that the performance is very similar across all combinations, but the highest performing combination was 128 nodes and 2 hidden layers. We also did not test other combinations of hyperparameters, because in this small scale hyperparameter tuning, we saw that the performance was relatively unaffected by these hyperparameter adjustments. Because training a neural network for more combinations of hyperparameter tuning is computationally costly and the benefit did not seem to be great, we decided against further hyperparameter tuning.
+
+ ![Figure 6](figures/6.png)
  
 ### Random Forest and Decision Tree
  
 For the random forest and decision tree models, we tuned the maximum tree depth parameter, ranging from 1 to 100. We used 100 different trees for the random forest and found that the performance of the random forest was consistent across all different depths tested (Figure 7). The highest performing random forest model had a maximum tree depth of 20, so we chose to use 20, even though there is evidence that many other options for the maximum tree depth would work well as well.
+
+ ![Figure 7](figures/7.png)
  
 For the decision tree, we found that the maximum tree depth of 1 had the largest performance of the different values tested (Figure 8). However, the confidence bars in Figure 8 show that there is overlap between many of the different values of tree depth provided, so there may be another optimal value depending on the dataset. Our evidence points to a maximum tree depth of 1 being optimal, so we used this particular tree depth for downstream analyses of the decision tree model.
+
+ ![Figure 8](figures/8.png)
  
 ### k-NN
  
 For the k-NN model, we tuned the number of nearest neighbors to determine how many neighboring observations to consider when making a prediction. We show that the highest performing model on average had 10 nearest neighbors, even though there was similar performance across the different parameters (Figure 9). We used a k-NN with 10 nearest neighbors for downstream analyses.
+
+ ![Figure 9](figures/9.png)
  
 ## Methods and Results (Baseline Model 1):
 
 ### “Very Simple” Model
  
 We created a “very simple” model as a sanity check to ensure that our models are outperforming a very simple predictive approach. The predictive approach is as follows: first, find the results of the last 3 U.S. House of Representatives elections. Then, take the elected party in at least 2 of the 3 elections (a majority) as the predicted party to win the next election. We report the results of this model in the next section below, with the other model results. The baseline model performs at a performance of 85.3% accuracy on our entire 2016 U.S. House of Representatives dataset (Figure 10).
+
+ ![Figure 10](figures/10.png)
 
 ## Methods and Results (Baseline Models 2):
  
