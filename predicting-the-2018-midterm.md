@@ -15,6 +15,8 @@ We selected the top-performing models found during testing and applied them to t
 
 ### Results
 
+The following models were trained using available 2016 data in two forms: with and without previous election data (see data exploration section for more info). The accuracies reported describe the models' efficacy on predicting 2018 outcomes.
+
 | Model          | Accuracy on Full Test Data | Accuracy on Demographic Only Data |
 |----------------|---------------------------:|----------------------------------:|
 | LASSO          |                     90.93% |                            79.93% |
