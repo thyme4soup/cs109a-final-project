@@ -17,10 +17,10 @@ We selected the top-performing models found during testing and applied them to t
 
 | Model          | Accuracy on Full Test Data | Accuracy on Demographic Only Data |
 |----------------|---------------------------:|----------------------------------:|
-| LASSO          |                            |                                   |
-| Ridge          |                            |                                   |
-| Neural Network |                            |                                   |
-| Random Forest  |                            |                                   |
+| LASSO          |                     90.93% |                            79.93% |
+| Ridge          |                     91.16% |                            79.77% |
+| Neural Network |                     91.63% |                            76.28% |
+| Random Forest  |                     89.53% |                            82.79% |
 
 ## Interpretation
 
