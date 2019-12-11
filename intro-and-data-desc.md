@@ -11,18 +11,17 @@ For the demographic data, the ACS gives us both social and economic data of the 
 
 The 5-Year estimates provide the most useful features, including percent breakdowns of race and economic class. However, the ACS will not release its estimates for 2018 until December 18th, 2019. As a result, we used their 2017 estimates as a proxy for the 2018 estimates. We downloaded the social and economic data from these web pages:
 
-https://data.census.gov/cedsci/table?q=&d=ACS%205-Year%20Estimates%20Data%20Profiles&table=DP02&tid=ACSDP5Y2016.DP02&y=2016&g=&lastDisplayedRow=0&vintage=2016&mode=
+[2016 Demographic Data](https://data.census.gov/cedsci/table?q=&d=ACS%205-Year%20Estimates%20Data%20Profiles&table=DP02&tid=ACSDP5Y2016.DP02&y=2016&g=&lastDisplayedRow=0&vintage=2016&mode=)
 
-https://data.census.gov/cedsci/table?q=&d=ACS%205-Year%20Estimates%20Data%20Profiles&table=DP03&tid=ACSDP5Y2017.DP03&y=2017&g=&lastDisplayedRow=27&hidePreview=false&moe=false&vintage=2017&mode=
+[2017 Demographic Data](https://data.census.gov/cedsci/table?q=&d=ACS%205-Year%20Estimates%20Data%20Profiles&table=DP03&tid=ACSDP5Y2017.DP03&y=2017&g=&lastDisplayedRow=27&hidePreview=false&moe=false&vintage=2017&mode=)
 
 
 We then drop all of the non-percent features except for median household income and mean household income from the economic features and voting age population and median age from the social features. This is to enable even comparison across districts. 
 
 For the election results and incumbency data, we utilized these datasets from the Daily Kos:
 
-https://docs.google.com/spreadsheets/d/1GNRnHy677PD8Je6Rp3evaJ5ty5MbCIDIAkSJVJ3ax2c/edit#gid=1178631925
-
-https://docs.google.com/spreadsheets/d/1oRl7vxEJUUDWJCyrjo62cELJD2ONIVl-D9TSUKiK9jk/edit#gid=1178631925
+[2016 Election Data](https://docs.google.com/spreadsheets/d/1GNRnHy677PD8Je6Rp3evaJ5ty5MbCIDIAkSJVJ3ax2c/edit#gid=1178631925)
+[2018 Election Data](https://docs.google.com/spreadsheets/d/1oRl7vxEJUUDWJCyrjo62cELJD2ONIVl-D9TSUKiK9jk/edit#gid=1178631925)
 
 Firstly, we drop all of the 2016 election features. This would limit the generalizability of our model as when we are predicting 2016 election results, 2016 election features will be overweighted, whereas they should not be when predicting the 2018 election results. Next we drop all of the constituency’s demographic features, as we built our own set for those from the ACS. Then, we replace the previous election with % Democrat - % Republican for both House and Presidential races. After that, we transform the incumbency features to features that are usable in modeling. This entails creating variables for whether incumbents are running, what party they are a part of and how long they’ve been in office and dropping the other variables about the incumbents. Finally, we merge the demographic and incumbency data to get our data sets. 
 
@@ -55,7 +54,6 @@ We plot the two overlapping histograms for each of our features: one histogram f
 Four notable histograms are shown in Figure 1. Figure 1a shows how the final elected party within the districts are related to the percentage of the population that is white within that district. We see a significant difference in shape and distribution between these two histograms. First, in any district that has a population with less than 10% of its population as white, the district always votes Democrat. We see that as the percentage of the district that is white increases, the proportion of districts that vote a Republican Representative into the U.S. House of Representatives increases. Once we get to districts that are above 90% white, the districts predominantly vote in a Republican Representative.
 
 ![Figure 1a](figures/1a.png)
- Format: ![Figure_1a]
  
 Figure 1b shows the relationship between the percentage of the district in the labor force separated by the elected party in the House of Representatives. We see that the Republican and Democrat histograms have a relatively similar shape, except for the fact that the Republican histogram shows a longer tail to the left, i.e. for districts that have a lower than 50% of the population in the labor force, they always vote in a Republican Representative. We also see that the Democrat histogram is slightly shifted to the right, so that districts that have a higher proportion of people in the labor force tend to vote Democrat into the House of Representatives.
  
