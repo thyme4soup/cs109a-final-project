@@ -3,7 +3,7 @@ nav_include: 2
 title: Introduction and Description of Data
 ---
 
-## Introduction:
+## Introduction
 
 For the demographic data, the ACS gives us both social and economic data of the relevant constituencies. For the previous election data, the Daily Kos has information for the winning party and categorical information about the incumbent such as if the race is open, if the incumbent won, if they lost, their name, religion, sex, race and party. 
 
