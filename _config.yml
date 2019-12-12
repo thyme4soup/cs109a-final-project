@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 baseurl: "/cs109a-final-project"
 url: "https://thyme4soup.github.io"
+title: Predicting the 2018 Election
+description: Predicting District outcomes using demographic and historical data by group 27
