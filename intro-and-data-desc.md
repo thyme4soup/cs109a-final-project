@@ -63,12 +63,12 @@ The demographic data we obtained had a large variety of features. We used a hand
 | Historical voting data | 2012 House Dem - Rep |
 | Percentage of the population that are men | Percent!!SEX AND AGE!!Total population!!Male |
 | Percentage of the population that are women | Percent!!SEX AND AGE!!Total population!!Female |
-|  | Percent!!RACE!!Total population |
-|  | Percent!!RACE!!Total population!!One race |
-|  | Percent!!RACE!!Total population!!Two or more races |
-|  | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race) |
-|  | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!White alone |
-|  | Percent!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force |
+| Percentage of the total population living in the district | Percent!!RACE!!Total population |
+| Percentage of the district that are one race | Percent!!RACE!!Total population!!One race |
+| Percentage of the district that are bi/multi-racial | Percent!!RACE!!Total population!!Two or more races |
+| Percentage of the district that are hispanic or latino | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race) |
+| Percentage of the district that are white | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!White alone |
+| Employment rate of the district | Percent!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force |
 | Labor industry breakdown (construction) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Construction |
 | Labor industry breakdown (manufacturing) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Manufacturing |
 | Labor industry breakdown (wholesaling) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Wholesale trade |
