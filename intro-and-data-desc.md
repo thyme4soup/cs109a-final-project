@@ -48,7 +48,36 @@ We perform exploratory data analysis to analyze which features are likely to giv
  
 #### Description of Feature Set
  
-TODO (Chenevey)
+The demographic data we obtained had a large variety of features. We used a hand-picked subset of these demographic features, listed below with description:
+
+| Feature Description | Column Label |
+|---|---|
+| Boolean value for whether there is an Incumbent in the race | Incumbent Running |
+| The Incumbent party (if applicable) | Incumbent Party |
+| How long the Incumbent has been in office (if applicable) | Incumbent Years in Office |
+| Historical voting data - How the district voted in the 2012 Obama/Romney race | 2012 Obama - Romney |
+| Historical voting data | 2008 Obama - McCain |
+| Historical voting data | 2014 Redrawn |
+| Historical voting data | 2014 House Dem - Rep |
+| Whether the district was redrawn in 2012 | 2012 Redrawn |
+| Historical voting data | 2012 House Dem - Rep |
+| Percentage of the population that are men | Percent!!SEX AND AGE!!Total population!!Male |
+| Percentage of the population that are women | Percent!!SEX AND AGE!!Total population!!Female |
+|  | Percent!!RACE!!Total population |
+|  | Percent!!RACE!!Total population!!One race |
+|  | Percent!!RACE!!Total population!!Two or more races |
+|  | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Hispanic or Latino (of any race) |
+|  | Percent!!HISPANIC OR LATINO AND RACE!!Total population!!Not Hispanic or Latino!!White alone |
+|  | Percent!!EMPLOYMENT STATUS!!Population 16 years and over!!In labor force |
+| Labor industry breakdown (construction) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Construction |
+| Labor industry breakdown (manufacturing) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Manufacturing |
+| Labor industry breakdown (wholesaling) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Wholesale trade |
+| Labor industry breakdown (retail) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Retail trade |
+| Labor industry breakdown (information technology) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Information |
+| Labor industry breakdown (public administration) | Percent!!INDUSTRY!!Civilian employed population 16 years and over!!Public administration |
+| Median household income of the district | Estimate!!INCOME AND BENEFITS (IN 2016 INFLATION-ADJUSTED DOLLARS)!!Total households!!Median household income (dollars) |
+| Percentage of civilians that have health insurance | Percent!!HEALTH INSURANCE COVERAGE!!Civilian noninstitutionalized population!!With health insurance coverage |
+| Percentage of families that are below the poverty line for the last 12 months | Percent!!PERCENTAGE OF FAMILIES AND PEOPLE WHOSE INCOME IN THE PAST 12 MONTHS IS BELOW THE POVERTY LEVEL!!All families |
  
 #### Feature Histograms
  
