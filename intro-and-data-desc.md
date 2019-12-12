@@ -29,6 +29,8 @@ Firstly, we drop all of the 2016 election features. This would limit the general
 ## Description of Data
  
 As certain districts had been redistricted in 2016 and 2018, the previous election data for those districts was missing. As we had known the missing mechanism, i.e. whether or not the district had been redistricted, our data was missing at random and we use multivariate imputation for the missing values. This entails utilizing all of our other features to generate thousands of random of predictions for our missing values and then taking the averages of those predictions as our imputation. Following this we have three types of data.
+
+![Missing Data Map](figures/Missing Data Map.png "Missing Data Map")
 	
 Election data: These entail our outcome variable, i.e. which party won, whether an incumbent is running, how long the incumbent has been in office, the incumbent’s office and the percent difference of the previous House and Presidential elections. 
 
