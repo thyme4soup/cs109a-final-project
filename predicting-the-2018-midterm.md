@@ -26,4 +26,8 @@ The following models were trained using available 2016 data in two forms: with a
 
 ## Interpretation
 
+As seen in Figure 14, when utilizing our best model from the training set (i.e. the random forest), we predicted the Republican house total to drop by 7 from 236 to 229 representatives and the Democratic house total to go up by 5 from 196 to 201 with the difference going to independents or vacancy. Although the directionality and overwhelming majority of districts were predicted correctly, we undershot the swing as in actuality the Democrat total went up 39 to 235 and the Republican total dropped by 37 to 199. In hindsight, the other models would have provided a marginal improvement, but nothing to match the magnitude of the actual swing. 
+
 ![Figure 14](figures/14.png "Figure 14")
+
+The inclusion of the election features has an impact on our predictive accuracy across all models, driving them from the ~76%-83% range to the ~89%-92% range. What's interesting here is how the random forest performs the best on the demographic only data, but the worst on the full test data. Regardless, FiveThirtyEight's best model had ~96% prediction accuracy for the 2018 house midterm elections, so we were not far off the industry standard. 
