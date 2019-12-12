@@ -10,7 +10,7 @@
     <nav class="group">
       <div class="wrapper">
         {% if site.title and site.title != page.title %}
-           <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+           <a href="{{ "/" | absolute_url }}">{{ Overview }}</a>
         {% endif %}
         {% assign navigation_pages = site.html_pages | sort: 'nav_include' %}
         {% for node in navigation_pages %}
