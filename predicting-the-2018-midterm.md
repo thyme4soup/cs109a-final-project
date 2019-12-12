@@ -26,4 +26,4 @@ The following models were trained using available 2016 data in two forms: with a
 
 ## Interpretation
 
-TODO (Chenevey)
+![Figure 14](figures/14.png "Figure 14)
