@@ -61,6 +61,8 @@ We also fit demographic-only models, which are the neural network, random forest
  
 Figure 11 shows the demographic-only model performance (left) and the performance of the corresponding models including both demographics and previous election data (right). We see a larger amount of overfitting in all four demographic-only models, where the gap between the training and validation accuracy is higher compared to the full feature set models. The validation accuracy has gone down by over 10% for each of the models compared to the corresponding full feature set models. The highest performing demographic-model was ridge regression, which still showed a significant accuracy drop very high performance on the full feature set. The LASSO performs next best, then random forest, followed by the neural network. None of the demographic-only models outperform the “very simple” model that used only the previous election data.
 
+ ![Figure 11](figures/11.png "Figure 11")
+
 ## Methods and Results (Predictive Models Performance):
  
 Figure 10 shows the cross-validation results across the best performing model for each type of model. We see that in terms of training accuracy, the random forest has near perfect accuracy, followed by Neural Network, Ridge Regression, and LASSO. However, we see that for all of the predictive models, excluding the “very simple” model, the training accuracy is higher than the validation accuracy, showing overfitting.
